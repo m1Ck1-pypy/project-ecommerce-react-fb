@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+select {
+    /* appearance: none; */
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.gradient-text {
+    text-transform: uppercase;
+    background: linear-gradient(45deg, rgb(248, 113, 113, 1) 33%, rgb(253, 186, 116, 1) 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar {
+    z-index: 999999;
+}
